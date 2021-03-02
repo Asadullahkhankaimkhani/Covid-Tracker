@@ -1,12 +1,15 @@
 
-import './App.css';
+import React from 'react'
 
-function App() {
-  return (
-    <div className="App">
-        <h1>Covid Tracker By Asadullah Khan</h1>
+class App extends React.Component{
+  render() 
+{ 
+    return(
+      <div>
+      <h1>Hello World</h1>
     </div>
-  );
+     )
+  }
 }
 
 export default App;
