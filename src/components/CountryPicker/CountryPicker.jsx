@@ -7,7 +7,7 @@ const CountryPicker = () => {
     const [fetchedCountries,setFetchedCountries] = useState([] )
 
     useEffect(() => {
-        const fetchAPI = async ({handleCountryChange}) =>
+        const fetchAPI = async () =>
         {
             setFetchedCountries(await fetchCountries());
         }
@@ -16,7 +16,7 @@ const CountryPicker = () => {
         console.log(fetchedCountries)
     return (
         <FormControl className = {styles.fromControl}>
-           <NativeSelect deafultValue="" onChange = {{e} => handleCountryChange}>
+           <NativeSelect deafultValue="">
            <option value = 'global'>Global</option>
            {fetchedCountries.map((country ,i) => <option key = {i} value = {country}>{country}</option>)}
            </NativeSelect>
