@@ -18,8 +18,9 @@ async componentDidMount() {
     return(
       <div className= {styles.container}>
         <Cards data ={data}/>
-        <Chart />
         < CountryPicker />
+        <Chart />
+       
     </div>
      )
   }
