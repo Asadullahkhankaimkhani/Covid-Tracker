@@ -34,4 +34,5 @@ handleCountryChange = async (country) => {
      )
   }
 }
+
 export default App;
