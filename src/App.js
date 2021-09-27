@@ -1,3 +1,5 @@
+/** @format */
+
 import React from "react";
 import { Cards, Chart, CountryPicker } from "./components";
 import styles from "./App.module.css";
@@ -25,7 +27,7 @@ const App = () => {
 
   return (
     <div className={styles.container}>
-      <img className={styles.image} src={CornaImage} alt="Covid-19 " />
+      <img className={styles.image} src={CornaImage} alt='Covid-19 ' />
       <Cards data={data} />
       <CountryPicker handleCountryChange={handleCountryChange} />
       <Chart data={data} country={country} />
